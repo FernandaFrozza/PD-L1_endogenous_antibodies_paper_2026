@@ -1,0 +1,6 @@
+## Removal of heavy chain data from cells (patent pending)
+sc@meta.data <- sc@meta.data[, !colnames(sc@meta.data) %in% c(
+    "BCR_Heavy_V_gene_Dominant",
+    "BCR_Heavy_D_gene_Dominant",
+    "BCR_Heavy_J_gene_Dominant"
+)]
